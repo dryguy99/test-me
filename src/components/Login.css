@@ -1,0 +1,13 @@
+custom-modal {
+  width: 30vw;
+}
+.container {
+  width: 35vw;
+}
+
+.login-btn {
+  margin-right: 1vw;
+}
+.login-local {
+  background-color: #d9b3ff;
+}

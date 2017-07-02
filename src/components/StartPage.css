@@ -1,0 +1,64 @@
+
+.App-logo {
+  animation: App-logo-spin infinite 10s linear;
+  height: 15vw;
+  text-align: left;
+  float: left;
+  margin: 1vw 0vw 0vw 3.5vw;
+  border-radius: 2vw;
+}
+
+.App-header {
+  background-color: #4d0099;
+  opacity: 0.8;
+  height: 10vw;
+  padding: 1vw;
+  color: white;
+  font-family: 'Fugaz One', cursive;
+}
+.title {
+  margin-left: 18vw;
+  font-size: 5vw;
+  fontWeight: 700;
+}
+.title-heading{
+  margin-left: 35vw;
+  font-size: 5vw;
+  fontWeight: 500;
+  color: #4d0099;
+  font-family: 'Permanent Marker', cursive;
+}
+.Main {
+
+  margin: 0vw;
+  background: url('./images/graphicbackground.jpg');
+  text-align: center;
+  opacity: 0.1;
+  height: 100vw;
+  position: absolute;
+  top: 0vw;
+  width: 100vw;
+  z-index: -1;
+}
+.App-content {
+  opacity: 1.0;
+  text-align: center;
+  color: #6600cc;
+}
+.App-intro {
+  font-size: large;
+  opacity: 1.0;
+  color: #6600cc;
+}
+
+.modal-container {
+  position: relative;
+}
+.modal-container .modal, .modal-container .modal-backdrop {
+  position: absolute;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotateY(0deg); }
+  to { transform: rotateY(360deg); }
+}
