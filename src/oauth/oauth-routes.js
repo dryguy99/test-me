@@ -12,7 +12,7 @@ function myRoutes(app, passport) {
     // HOME PAGE (with login links) ========
     // =====================================
     app.get('/oauth', function(req, res) {
-        app.sendFile(path.join(__dirname, '..', '..', 'public', 'index.html')); // load the index.ejs file
+        app.sendFile(__dirname + '../../public/index.html'); // load the index.ejs file
     });
 
     // =====================================
