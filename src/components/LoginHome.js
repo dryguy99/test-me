@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Button from 'react-bootstrap/lib/Button';
 import Modal from 'react-bootstrap/lib/Modal';
 import IndexLogin from './IndexLogin';
-import './Login.css';
+import './css/BusinessCasual.css';
 import LocalLogin from './LocalLogin';
 import LocalSignup from './LocalSignup';
 import ConnectLocal from './ConnectLocal';
@@ -79,13 +79,11 @@ render() {
 
   return (
     <div>
-      <Button
-        bsStyle="primary"
-        bsSize="large"
+      <a className='navbar-default navbar-nav navbar-header'
         onClick={this.openModal}
         >
           LOGIN
-        </Button>
+        </a>
 
       <Modal show={this.state.showModal} onHide={this.closeModal} bsSize="large" aria-labelledby="contained-modal-title-lg">
         <Modal.Header closeButton>

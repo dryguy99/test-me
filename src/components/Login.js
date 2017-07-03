@@ -1,7 +1,7 @@
 // Include React
 import React from "react"
 // Here we include all of the sub-components
-
+import { Link, Route} from 'react-router-dom';
 // Creating the Main component
 class Login extends React.Component {
 
@@ -46,7 +46,7 @@ class Login extends React.Component {
 
               <hr/>
 
-              <p>Need an account? <a href="/signup">Signup</a></p>
+              <p>Need an account? <Link to={{pathname: '/signup'}} id="signup" className="login-local login-btn btn btn-default"><span className="fa fa-user"></span>Signup</Link>{' '}</p>
               <p>Or go <a href="/">home</a>.</p>
 
           </div>

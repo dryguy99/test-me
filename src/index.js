@@ -18,10 +18,6 @@ const Home = () => <h1>Home</h1>
 ReactDom.render((
   <Router>
     <div>
-      <App />
-      <Link to="/">Home</Link>{' '}
-      <Link to={{pathname: '/oauth'}}>HomeLogin</Link>{' '}
-      
 
 
         <Route exact path="/" component={Home} />
@@ -31,7 +27,7 @@ ReactDom.render((
             <Link to="/oauth">Oauth</Link>
           </div>)} />
 
-
+        <App />
     </div>
   </Router>
 

@@ -172,6 +172,9 @@ footer p {
     .nav>li>a {
         padding: 35px;
     }
+    #avatar {
+      align-items: center;
+    }
 
     .navbar-nav>li>a {
         line-height: normal;

@@ -56,6 +56,9 @@ class App extends Component {
                 <li>
                     <a href="outfits.html">Outfits</a>
                 </li>
+                <li>
+                  <LoginHome />
+                </li>
                 <li className="dropdown">
                     <a className="dropdown-toggle" data-toggle="dropdown" href="#" id="camera">Camera
                     <span className="caret"></span></a>
@@ -82,8 +85,8 @@ class App extends Component {
         <div className="box">
             <div className="col-lg-12">
                 <hr/>
-                <h2 className="intro-text text-center">Company
-                    <strong>blog</strong>
+                <h2 className="intro-text text-center">UPLOAD
+                    <strong>CENTER</strong>
                 </h2>
                 <hr/>
             </div>
@@ -98,7 +101,9 @@ class App extends Component {
                     <div>
 
                         <form action="/" method="POST" enctype="multipart/form-data">
-                          <input id="avatar" type="file" value="upload" name="file" enctype="multipart/form-data" multiple onchange="AutomaticSend()"/><br/><br/>
+                          <div className='text-center'>
+                            <input id="avatar" type="file" value="upload" name="" enctype="multipart/form-data" multiple onchange="AutomaticSend()"/><br/><br/>
+                          </div>
                           <div id="type-align">
                             <input type="checkbox" name="type" value="shoes"/>shoes
                             <input type="checkbox" name="type" value="pants"/>pants

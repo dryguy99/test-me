@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import { Link, Route} from 'react-router-dom';
 
 
 class LocalSignup extends Component {
@@ -34,7 +34,7 @@ class LocalSignup extends Component {
 
           <hr/>
 
-          <p>Already have an account? <a href="/login">Login</a></p>
+          <p>Already have an account? <Link to={{pathname: '/login'}} id="local" className="login-local login-btn btn btn-default">Login</Link>{' '}</p>
           <p>Or go <a href="/">home</a>.</p>
 
         </div>

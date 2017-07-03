@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Switch, Link, Route, BrowserRouter as Router } from 'react-router-dom';
 import Login from './login.js';
 import LocalSignup from './LocalSignup.js';
+import Profile from './Profile.js';
 class IndexLogin extends Component {
   constructor(props) {
     super(props);
@@ -33,6 +34,7 @@ class IndexLogin extends Component {
                   <a href="/auth/google" id="google" className="login-btn btn btn-danger"><span className="fa fa-google-plus"></span>Login with Google</a>
                   <Route path="/login" component={Login} />
                   <Route path="/signup" component={LocalSignup} />
+                  <Route path='/profile' component={Profile} />
 
           </div>
 
