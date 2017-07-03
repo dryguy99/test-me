@@ -19,7 +19,7 @@ class Login extends React.Component {
     // Here we render the function
     render() {
         return (
-          <div className="container">
+          <div className="mycontainer">
 
             <div className="col-sm-6 col-sm-offset-3">
 

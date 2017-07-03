@@ -238,7 +238,10 @@ class App extends Component {
     <div className="container">
         <div className="row">
             <div className="col-lg-12 text-center">
-                <p>Copyright &copy; Kelly's Closet 2017</p>
+              <p><span className='cpyrght'>Copyright &copy; Kelly's Closet 2017</span><br/>
+                <span className='cpyrght'>Designed and Developed by:</span><br/>
+                <a href='http://www.timdry.net/' target='_blank'>Timothy Dry</a> | <a href='#' target='_blank'>Tom Frazzitta</a> | <a href='#' target='_blank'>Kris Jackson</a> | <a href='#' target='_blank'>Alyssa Santopadre</a>
+              </p>
             </div>
         </div>
     </div>

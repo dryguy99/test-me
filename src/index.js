@@ -21,7 +21,7 @@ ReactDom.render((
       <App />
       <Link to="/">Home</Link>{' '}
       <Link to={{pathname: '/oauth'}}>HomeLogin</Link>{' '}
-      <Link to={{pathname: '/login'}}>Login</Link>{' '}
+      
 
 
         <Route exact path="/" component={Home} />
@@ -30,7 +30,7 @@ ReactDom.render((
           <div className={match ? 'true' : 'false'}>
             <Link to="/oauth">Oauth</Link>
           </div>)} />
-        <Route path="/login" component={Login} />
+
 
     </div>
   </Router>
