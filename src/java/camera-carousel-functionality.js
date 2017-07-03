@@ -1,7 +1,11 @@
 var $ = require('jquery');
 var video = document.getElementById('video');
 var canvas = document.getElementById('canvas');
-var context = canvas.getContext('2d');
+if (canvas.getContext('2D' != null)) {
+  var context = canvas.getContext('2d');
+}else {
+  var context;
+};
 
 module.exports = function() {
 
@@ -9,9 +13,7 @@ module.exports = function() {
     $("#avatar").trigger("click");
   }
 
-  function AutomaticClose(){
-    $("#change").trigger("click");
-    }
+
 
 if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
   navigator.mediaDevices.getUserMedia({ video: true }).then(function(stream) {
@@ -31,21 +33,5 @@ function download(){
 
 
 
- function caroselFunction(){
-    $('.multi-item-carousel').carousel({
-      interval: false
-    });
-    $('.multi-item-carousel .item').each(function(){
-      var next = $(this).next();
-      if (!next.length) {
-        next = $(this).siblings(':first');
-      }
-      next.children(':first-child').clone().appendTo($(this));
-      if (next.next().length>0) {
-        next.next().children(':first-child').clone().appendTo($(this));
-      } else {
-        $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
-      }
-    });
-  };
+
 }

@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 //import logo from './images/LTSlogo.jpg';
-//import './css/business-casual.css';
-//import './css/delete-fade.css';
+import './css/BusinessCasual.css';
+import './css/DeleteFade.css';
 import $ from 'jquery';
 import "../java/auto-form.js";
-import "../java/camera-carousel-functionality.js";
+//import "../java/camera-carousel-functionality.js";
 import "../java/display-images.js";
 import "../java/form.js";
 import "../java/weatherAPI.js";
